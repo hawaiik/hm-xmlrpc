@@ -9,6 +9,8 @@ ipXmlRpcServer = '192.168.x.x'
 portXmlRpcServer = '5544'
 
 idHm = ''
+# To register an xmlrpc server with Homematic set an ID 
+# To unregister leave it blank
 
 proxy = xmlrpclib.ServerProxy('http://'+ipHm+':'+portHm)
 print proxy.init(ipXmlRpcServer+':'+portXmlRpcServer,idHm)
